@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+   <Button
+       android:id="@+id/btn_notifaction_without_channel"
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/main_activity_button_height"
+       android:text="show notifaction without channel"/>
+
+    <Button
+        android:id="@+id/btn_notifaction_with_channel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_activity_button_height"
+        android:text="show notifaction with channel"/>
+
+    <Button
+        android:id="@+id/btn_start_service"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_activity_button_height"
+        android:text="start service"/>
+
+    <Button
+        android:id="@+id/btn_start_service_backgound"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_activity_button_height"
+        android:text="start service backgound"/>
+
+    <Button
+        android:id="@+id/btn_start_service_fore_gound"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_activity_button_height"
+        android:text="start service foregound"/>
+
+    <Button
+        android:id="@+id/btn_broadcast"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_activity_button_height"
+        android:text="send broadcast"/>
+
+</LinearLayout>
