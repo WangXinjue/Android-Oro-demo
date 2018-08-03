@@ -40,4 +40,21 @@
         android:layout_height="@dimen/main_activity_button_height"
         android:text="send broadcast"/>
 
+    <Button
+     android:id="@+id/btn_broadcast_with_signature"
+     android:layout_width="match_parent"
+     android:layout_height="@dimen/main_activity_button_height"
+     android:text="send broadcast withsignature"/>
+
+    <Button
+        android:id="@+id/btn_add_shortcut_broadcast"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_activity_button_height"
+        android:text="add shortcut broadcast"/>
+
+ <Button
+     android:id="@+id/btn_add_shortcut_android_oro"
+     android:layout_width="match_parent"
+     android:layout_height="@dimen/main_activity_button_height"
+     android:text="add shortcut broadcast"/>
 </LinearLayout>

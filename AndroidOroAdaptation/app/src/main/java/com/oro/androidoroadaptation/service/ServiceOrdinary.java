@@ -30,18 +30,6 @@ public class ServiceOrdinary extends Service{
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
         Log.d("wxj", "ServiceOrdinary :onStartCommand: ");
-        if(intent.getBooleanExtra("startService",false)){
-            new Handler().postDelayed(new Runnable() {
-                @Override
-                public void run() {
-                    Log.d("wxj", "ServiceOrdinary :run: startService ");
-                    Intent i = new Intent();
-                    i.setClass(ServiceOrdinary.this, ServiceOrdinary.class);
-                    startService(i);
-                }
-            },5000);
-
-        }
         return super.onStartCommand(intent, flags, startId);
     }
 

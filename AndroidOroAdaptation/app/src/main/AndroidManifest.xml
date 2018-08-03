@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.oro.androidoroadaptation">
+    <!--定义签名权限，这个apk向外部提供的权限-->
+    <!--权限的等级是signature，如果是nomorl，在android o 上，是收不到广播的-->
+    <permission
+        android:name="com.oro.androidoroadaptation.signature.permission"
+        android:protectionLevel="signature">
+    </permission>
+    <!--使用权限，正常应该是其他应用使用这个权限，这里为了演示方便，就本应用直接使用了-->
+    <uses-permission android:name="com.oro.androidoroadaptation.signature.permission"/>
+
+    <!-- 添加快捷方式 -->
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <!-- 移除快捷方式 -->
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+    <!-- 查询快捷方式 -->
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+
 
     <application
         android:allowBackup="true"
